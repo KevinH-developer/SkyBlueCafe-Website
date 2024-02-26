@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <!-- Iconos Fotawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo de la empresa">
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="../views/servicios.html">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container1">
+        <h1 class="title-secondary2">Bienvenido a SkyBlue Café</h1>
+        <div class="content">
+            <p>En Sky Blue Café, nos enorgullece ofrecer una experiencia única donde el encanto del café se combina con la majestuosidad del mar. Desde nuestras raíces locales hasta convertirnos en un destino querido por locales y visitantes, nuestra historia está impregnada del amor por el café y el deseo de compartir la belleza de nuestro entorno costero en La Ceiba, Honduras.</p>
+            <div class="first-box nopadding">
+                <img src="../img/place.jpg" alt="SkyBlue Café">
+                <p>Ubicados estratégicamente para aprovechar al máximo nuestra vista al mar en el corazón de La Ceiba, nos dedicamos a brindarte momentos de calma y serenidad mientras disfrutas de una deliciosa taza de café. Cada sorbo es una oportunidad para contemplar las olas danzantes y dejarse llevar por la brisa marina que acaricia nuestras costas. <br><br>En Sky Blue Café, nos esforzamos por ofrecerte una experiencia completa, donde la calidad del café se fusiona con la belleza natural que nos rodea. Trabajamos en estrecha colaboración con agricultores locales para seleccionar los mejores granos, los cuales son cuidadosamente tostados y preparados para ofrecerte un sabor excepcional en cada taza.</p>
+            </div>
+            
+            <p>Además de nuestro compromiso con el café de calidad, también nos enorgullece apoyar a nuestra comunidad. Creemos en devolver a aquellos que nos han brindado tanto, y estamos comprometidos con iniciativas que promuevan el desarrollo sostenible y el bienestar de nuestros vecinos.</p><br>
+            <p>En Sky Blue Café, te invitamos a ser parte de nuestra historia mientras te sumerges en el mundo del café y disfrutas de la belleza única de La Ceiba. ¡Únete a nosotros para una experiencia que estimulará tus sentidos y calmará tu alma, con la música del mar como telón de fondo!</p>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="../img/logo.png" alt="logo de empresa">
+        </div>
+        <div class="info">
+            <h4>SkyBlue Café</h4>
+            <h4>La Ceiba, Honduras</h4>
+            <h4>info-skybluey@cafe.com</h4>
+        </div>
+        <div class="social-media sfooter">
+            <nav class="menu-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+        
+        menu.addEventListener('click', function(){
+            if(movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            } else {
+                movimiento.className = 'container-nav';
+                icono.className = ' fa-solid fa-bars';
+            }
+        });
+    
+    </script>
+</body>
+</html>

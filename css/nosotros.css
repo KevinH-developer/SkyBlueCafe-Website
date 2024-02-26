@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: fuente-cafe;
+    src: url(../fonts/LouisGeorgeCafe.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fuente-cafe;
+}
+
+.container1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2%;
+    padding-bottom: 5%;
+    font-size: 20px;
+    
+}
+
+.nopadding{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.title-secondary2{
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    text-align: left;
+    font-size: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .container1 {
+        padding: 50px;
+    }
+    .nopadding img{
+        margin: 20px auto; /* Utilizamos 'auto' para centrar horizontalmente */
+
+    }
+    .container1 h1{
+        text-align: center;
+    }
+}
